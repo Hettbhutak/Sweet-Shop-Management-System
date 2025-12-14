@@ -1,116 +1,73 @@
-#  Sweet Shop Management System
 
-The **Sweet Shop Management System** is a full-stack web application designed to manage the day-to-day operations of a sweet shop. It helps in handling products, inventory, orders, billing, and users efficiently through a centralized system.
+# Sweet Shop Management System
 
-This repository contains both **backend** and **frontend** code.
+A full-stack application for managing a sweet shop, featuring user authentication, admin controls, inventory management, and a modern UI.
 
----
+## Features
+- User registration and login (JWT-based authentication)
+- Admin and regular user roles
+- Add, update, delete, search, and purchase sweets
+- Inventory management (purchase/restock)
+- Responsive React frontend
+- PostgreSQL database
+- Test-driven backend and frontend
 
-## ✨ Features
+## Tech Stack
+- **Backend:** Node.js, TypeScript, Express, TypeORM, PostgreSQL, JWT
+- **Frontend:** React, TypeScript, Axios, React Router
+- **Testing:** Jest, Supertest, React Testing Library
 
-- Product and inventory management  
-- Order and billing system  
-- User authentication and authorization  
-- RESTful APIs  
-- Frontend interface for easy interaction  
-- Modular and scalable architecture  
+## Getting Started
 
----
+### Prerequisites
+- Node.js (v16+ recommended)
+- PostgreSQL
 
-## 📁 Project Structure
+### Backend Setup
+1. Navigate to the backend folder:
+	```
+	cd backend
+	```
+2. Install dependencies:
+	```
+	npm install
+	```
+3. Configure your `.env` file (see `.env` example in backend).
+4. Start the backend server:
+	```
+	npm run dev
+	```
 
-Sweet-Shop-Management-System/
-├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middlewares/
-│ ├── config/
-│ ├── .env.example
-│ ├── server.js
-│ └── package.json
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── assets/
-│ │ └── index.js
-│ └── package.json
-├── .gitignore
-└── README.md
+### Frontend Setup
+1. Navigate to the frontend folder:
+	```
+	cd frontend
+	```
+2. Install dependencies:
+	```
+	npm install
+	```
+3. Start the frontend:
+	```
+	npm start
+	```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Folder Structure
+- `backend/` - API, database, authentication, business logic
+- `frontend/` - React SPA, UI, API calls
 
----
+## My AI Usage
+This project was developed with the assistance of AI tools:
+- **GitHub Copilot**: Used for generating boilerplate code, API endpoints, and React components.
+- **How AI was used**: Copilot helped with code suggestions, test generation, and refactoring. All code was reviewed and adapted for project requirements.
+- **Reflection**: AI accelerated development, reduced boilerplate, and improved code quality, but all logic and structure were designed and validated by the developer.
 
-##  Getting Started
+## Screenshots
+<!-- Add screenshots of your app here -->
 
-### Clone the Repository
+## Test Report
+<!-- Add your test suite results here after running tests -->
 
-```bash
-git clone https://github.com/Hettbhutak/Sweet-Shop-Management-System.git
-
-cd Sweet-Shop-Management-System
-
- Backend Setup
-  Navigate to Backend Folder
-cd backend
-
- Install Dependencies
-npm install
-
- Environment Configuration
-
-Create a .env file using .env.example:
-
-cp .env.example .env
-
-
-Update .env with your configuration:
-
-PORT=5000
-DATABASE_URL=your_database_connection
-JWT_SECRET=your_secret_key
-
-
- Do not upload your .env file to GitHub.
-
- Run Backend Server
-npm run dev
-
-
-Backend will run at:
-
-http://localhost:5000
-
- Frontend Setup
- Navigate to Frontend Folder
-cd ../frontend
- Install Dependencies
-npm install
-
- Start Frontend Server
-npm start
-
-
-Frontend will be available at:
-
-http://localhost:3000
-
- API Endpoints (Sample)
-Method	Endpoint	Description
-GET	/api/products	Get all products
-POST	/api/products	Add new product
-GET	/api/orders	Get all orders
-POST	/api/users/login	User login
-
-(Endpoints may vary based on implementation)
-
- Technologies Used
-
-Backend: Node.js, Express.js
-
-Frontend: React.js
-
-Database: MongoDB / MySQL
-
-Authentication: JWT
+## License
+MIT
